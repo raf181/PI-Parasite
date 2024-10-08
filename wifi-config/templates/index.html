@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>WiFi Configuration</title>
+    <style>
+        body { font-family: Arial, sans-serif; background-color: #f2f2f2; }
+        .container { width: 300px; margin: auto; padding-top: 100px; }
+        input[type=text], input[type=password] {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            box-sizing: border-box;
+        }
+        input[type=submit] {
+            width: 100%;
+            background-color: #4CAF50;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+        }
+        input[type=submit]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Configure WiFi</h2>
+        <form method="post">
+            <label for="ssid">SSID:</label>
+            <input type="text" id="ssid" name="ssid" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+</html>

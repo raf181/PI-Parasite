@@ -1,0 +1,10 @@
+[Unit]
+Description=Network Check Service
+After=network.target
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/bin/network-check.sh
+
+[Install]
+WantedBy=multi-user.target
